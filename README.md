@@ -13,5 +13,5 @@ Portfolio site
 
 ## view only
 
-* <a href="http://htmlpreview.github.com/?https://raw.github.com/mlfong/robotics-reflections/master/src/index.html">Portfolio</a>
+* <a href="http://htmlpreview.github.com/?https://github.com/mlfong/robotics-reflections/blob/master/src/index.html">Portfolio</a>
 
