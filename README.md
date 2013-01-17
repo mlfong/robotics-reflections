@@ -9,7 +9,7 @@ Portfolio site
 
 ## clone
 
-  	$$ git clone https://github.com/mlfong/robotics-reflections.git
+  	git clone https://github.com/mlfong/robotics-reflections.git
 
 ## view only
 
