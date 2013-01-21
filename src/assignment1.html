@@ -21,7 +21,21 @@
 		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A1/start.jpg"> </br> </br>
 		Fig 2. Noticing the quick intersection after a turn</br>
 		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A1/quickturn.jpg"> </br>
-		It was really cool seeing the robot move and while we weren't able to get a second run in, it gave a lot of insight into the fickleness of dealing with hardware (especially sensors). </br>
+		It was really cool seeing the robot move and while we weren't able to get a second run in, it gave a lot of insight into the fickleness of dealing with hardware (especially sensors). </br> </br>
+
+		Coding maze learner: </br>
+		This was, honestly, quite frustrating at first. There was a lot of guesswork for finding the right values for the multiple elapsed times so that the Pololu will end up in the right place so as to 1. make a correct turn and 2. not make redundant turns. It ended up being it was easier to make a separate, intermediate step between finding an intersection and deciding what kind of intersection it was (left/straight/right). Results were good this way and I could move onto the shortest path algorithm. </br> </br>
+		The algorithm I settled on was left hand rule with turn simplification, using the bad turns learned empirically to produce a shortest start to goal path. </br> </br>
+
+		Overall thoughts: </br>
+		I think the algorithmic part of this project was pretty simple. Maze learning with limited knowledge about the world can be solved by exhaustive exploration (left hand rule). The trickiness of this project was tinkering with sensor values and timing. Interestingly enough it reminded me about human movement and decision making, something I take for granted every day is very hard to replicate. </br>
+		It also got me thinking about the limitations of the robot. While the learning algorithm is more or less static, the robot's ability to perceive is not. For example we were first given a map that was clearly too big (lines too thick, start/goal circles too big). This caused many problems for the robot becaues of the narrowness of its sensors. It can't make the on the fly decision like humans can to say, oh this is a very similar problem I just treat everything a little bit larger. No, it does not and in fact very quickly fails to even get out of the start state. </br>
+		Another issue with the sensors is how clear and concise the input is. In the Processing code I notice a blur method that can obfuscate the maze lines. With blur set to 5, our sensors fail. This is almost the same as if I took my glasses off and tried to follow a line, or turning the lights off (which would probably fail for both humans and robots depending on the remaining light in the room). </br></br>
+
+		Figure 3. Blurring the maze </br>
+		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A1/blur5.png"> </br> </br>
+
+		The project was very cool, frustrating at first, but definitely was interesting and has a lot of things to explore.
 
 
 
