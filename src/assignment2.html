@@ -7,14 +7,26 @@
     <body>
     	<blockquote>
 	<h1>
-	Assignment 2 </br>
+	Assignment 2 Reinforcement Learning</br>
 	</h1>
 	<h5>
 	@author mlfong </br>
 	</h5>
     <p>
 	<a href="http://htmlpreview.github.com/?https://github.com/mlfong/robotics-reflections/blob/master/src/index.html">Back to main page</a></br></br>
-		Part 1 </br>
+		I first got exposed to reinforcement learning back in CS-4641, machine learning, but this being my first time interactively seeing reinforcement as the agent learns it in real time. </br>
+		</br>
+		Value Iteration </br>
+		Wouldn't this be ideal? If we had world knowledge, no need to explore, we just run some math formulae in life and be done with it. Here're a screenshot of a learned policy using value iteration (Fig 1): </br>
+		Fig 1. Perfect policy</br>
+		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A2/vpolicy.png"> </br>
+		Blue squares mean to move down, red moves up, and green means to stay. The diagonal patterns of the policy basically show the "path" to travel. </br>
+		I think it was really neat to be able to see the agent get the rewards as it learned the policy, although not the use of Comic Sans for the "Yahoo" display message (haha). </br>
+		</br>
+		Q-Learning </br>
+		This part I really thought was interesting, because it mirrors real life. Going through life there is no strict policy to follow -- you can choose to say, eat something, read a book, take a nap -- all kinds of choices to fill up your time. So to figure out what is best (which in real life is not quite so easy, rewards are dynamic!) is really cool and the idea of exploration is really interesting to me. No screenshot for this one; the end Q-values are very similar to value iteration and the policies are similar. with some uncertainty. 
+	</br> </br>
+		Final thoughts: always update maxV! </br>
 		-mlfong
 	</br></br>
 	<a href="http://htmlpreview.github.com/?https://github.com/mlfong/robotics-reflections/blob/master/src/index.html">Back to main page</a>
