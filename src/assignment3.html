@@ -19,6 +19,15 @@
 		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A3/eqn1.gif"> </br>
 		by setting the base frame S as the tool tip and the zero configuration as the orthographic position shown here: </br>
 		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A3/cut.png"> </br>
+		Then filling out the exp functions is as easy as filling out </br>
+		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A3/exp.png"> </br>
+		with the correct 3x3 rotational matrix along the axis of rotation (ex if you rotate along the XY plane, your axis of rotation is Z). </br>
+		Once we do that we have implemented forward kinematics and we can calculate the rotation and position of the tool once we set the angles of each joint. Honestly this part took a very long time to understand at first -- there was a lot of shorthand and prior knowledge assumed in the notes -- but once it became clear and the math worked out it was very wonderful to see it work. </br> </br>
+		For inverse kinematics we looked at another simulation. In IK we're given poses now and we're trying to calculate the joint axis. We explored some of the physical limitations of the robot given (ex range and bending ability) and we then created our own robot. I made a snake: </br>
+		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A3/snake03.png"> </br>
+		I discussed how it could replicate many of a real snake's movements, like the slitering motion or coiling, but not all the motions a snake can do. For example the snake manipulator I made, if it were made in real life, would not be able to tie itself in a knot without the use of more complex and more joints. I even made it seem like the snake could slither forward by waving the joints around and scrolling dynamic "grass" downwards. </br>
+		<iframe src="http://player.vimeo.com/video/59464656" width="500" height="519" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/59464656">Snake Manipulator</a> from <a href="http://vimeo.com/user16405112">Man</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+		</br>
 		-mlfong
 	</br></br>
 	<a href="http://htmlpreview.github.com/?https://github.com/mlfong/robotics-reflections/blob/master/src/index.html">Back to main page</a>
