@@ -15,7 +15,15 @@
 	</h5>
     <p>
 	<a href="http://htmlpreview.github.com/?https://github.com/mlfong/robotics-reflections/blob/master/src/index.html">Back to main page</a></br></br>
-		tba
+		This is it, our final project in CS-3630 Robotics and Perception. Here we jump into one of the most famous set of problems in robotics: SLAM, simultaneous localization and mapping. I think Wikipedia gives one of the best tl;dr (too long; didn't read, for you non-interweb veterans) of SLAM -- it is basically a chicken or the egg came first problem. A robot is thrown into an environment that it basically knows little to nothing about. It has to figure out where it is (localization) and what the environment looks like (mapping) at the same time (well more like alternating the two). Hence the name simultaneous localization and mapping.
+		</br></br>
+		For this assignment we had to research and report on one of three options. 1) Use a robot and get our own observations then run a SLAM algorithm over it. 2) Pick two SLAM algorithms and two datasets and compare / contrast them. 3) Pick just one SLAM algorithm and research it deeply. We chose option 3; our algorithm we chose <a href="http://www.openslam.org/toro.html">TORO - Tree-based netwORk Optimizer</a>.
+		</br></br>
+		Without repeating myself as I did in the report, a quick overview on TORO is it builds on a known gradient descent SLAM method but optimizes over data using spanning trees that not only improves convergence time but also bounds the problem to area of the map not distance traveled (as seen in the sensor's point of view). It's pretty impressive though, check out how the progress it makes towards correcting this [artificial] dataset:
+		</br></br>
+		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A7/manhattanraw.png"> </br>
+		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A7/manhattan500.png"> </br>
+		<img src="https://raw.github.com/mlfong/robotics-reflections/master/images/A7/manhattantruth.png"> </br>
 		</br>
 		-mlfong
 	</br></br>
